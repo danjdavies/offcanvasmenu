@@ -1,0 +1,160 @@
+body
+{
+	margin: 0;
+}
+
+nav
+{
+	background: #000;
+	box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    position: relative;
+}
+
+.advanced nav
+{
+	width: 300px;
+	transform: translate(-300px,0);
+    -webkit-transform:translate(-300px, 0);
+    -moz-transform:translate(-300px, 0);
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+
+.advanced .open
+{
+	transform: translate(0,0);
+    -webkit-transform:translate(0, 0);
+    -moz-transform:translate(0, 0);
+}
+
+nav ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+nav ul li
+{
+	border-bottom: 1px solid #fff;
+}
+
+.advanced nav ul li
+{
+	border-bottom: 1px solid #fff;
+	float: none;
+}
+
+nav ul a
+{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 16px 10px;
+	font-weight: 700;
+}
+
+nav ul a:hover
+{
+	text-decoration: none;
+}
+
+.advanced nav ul a
+{
+	text-decoration: none;
+	padding: 16px 10px;
+	margin: 0;
+}
+
+nav .menu-icon
+{
+	display: block;
+	width: 100px;
+	height: 36px;
+	background: #663399 url(../images/icons.png) 0 0 no-repeat;
+	position: absolute;
+	top: 0;
+	right: -100px;
+	text-align: center;
+	padding-top: 14px;
+	
+}
+
+nav .menu-icon:hover
+{
+	background: #663399 url(../images/icons.png) 0 bottom no-repeat;
+}
+
+nav.open .menu-icon
+{
+	background: #663399 url(../images/icons.png) right 0 no-repeat;
+}
+
+nav.open .menu-icon:hover
+{
+	background: #663399 url(../images/icons.png) right bottom no-repeat;
+}
+
+.bounceRight {
+  -webkit-animation-name: bounceRight;
+  animation-name: bounceRight;
+}
+
+.border-menu 
+{
+  position: relative;
+  padding-left: 1.25em;
+  color: #fff;
+}
+
+.border-menu:before 
+{
+  content: "";
+  color: #fff;
+  position: absolute;
+  top: 0.25em;
+  left: 0;
+  width: 1em;
+  height: 0.125em;
+  border-top: 0.375em double #fff;
+  border-bottom: 0.125em solid #fff;
+}
+
+nav .close-icon
+{
+	display: block;
+	width: 50px;
+	height: 36px;
+	background: #ff0000;
+	position: absolute;
+	top: 0;
+	right: 0px;
+	text-align: center;
+	padding-top: 14px;
+	color: #fff;
+}
+
+
+@media only screen and (min-width: 768px){
+
+	nav ul li
+	{
+		float: left;
+		margin: 0;
+		border-bottom: 0;
+	}
+
+	nav ul a
+	{
+		text-decoration: underline;
+	}
+
+
+}
+
+
+
